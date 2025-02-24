@@ -1,0 +1,107 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Colorful body background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ff00cc, #00ffcc, #cc00ff, #ffcc00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container with gradient border */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 4px solid transparent;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Vibrant title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #ff4757, #ffa502, #2ed573);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Input section */
+.input-section {
+  margin-bottom: 1.5rem;
+}
+
+.input-section label {
+  font-size: 1.2rem;
+  color: #ff4757;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#birthdate {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 3px solid #2ed573;
+  border-radius: 8px;
+  background: #eaffea;
+  color: #333;
+  outline: none;
+}
+
+/* Calculate button */
+#calculate-btn {
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #ff4757, #ffa502);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#calculate-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(59, 59, 59, 0.5);
+}
+
+/* Result display */
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #fff3e6;
+  border: 3px solid #ff6b6b;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(173, 99, 3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #birthdate,
+  #calculate-btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+  .result {
+    font-size: 1rem;
+  }
+}
